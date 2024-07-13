@@ -1,0 +1,23 @@
+[gd_scene load_steps=6 format=3 uid="uid://d3fbiavnv7yhw"]
+
+[ext_resource type="PackedScene" uid="uid://y814ji3i2sd8" path="res://player.tscn" id="1_e3rad"]
+[ext_resource type="PackedScene" uid="uid://bdp7wjw6p6vkp" path="res://Planets/TutorialPlanet/tutorial_dog.tscn" id="2_sbxyr"]
+[ext_resource type="PackedScene" uid="uid://cn37hwjfvsck0" path="res://Helpers/actionable.tscn" id="3_dr20j"]
+[ext_resource type="Resource" uid="uid://cg1s7i8o0vtgq" path="res://Dialogue/tutorial_dog.dialogue" id="4_2ue0b"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_depkt"]
+radius = 66.0
+
+[node name="TutorialPlanet" type="Node2D"]
+
+[node name="Player" parent="." instance=ExtResource("1_e3rad")]
+
+[node name="TutorialDog" parent="." instance=ExtResource("2_sbxyr")]
+position = Vector2(388, 213)
+
+[node name="Actionable" parent="TutorialDog" instance=ExtResource("3_dr20j")]
+dialogue_resource = ExtResource("4_2ue0b")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TutorialDog/Actionable"]
+position = Vector2(-86, -1)
+shape = SubResource("CircleShape2D_depkt")

@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_12"
+type="Resource"
+uid="uid://cg1s7i8o0vtgq"
+path="res://.godot/imported/tutorial_dog.dialogue-3516c61f42850689f65723c2453d42c7.tres"
+
+[deps]
+
+source_file="res://Dialogue/tutorial_dog.dialogue"
+dest_files=["res://.godot/imported/tutorial_dog.dialogue-3516c61f42850689f65723c2453d42c7.tres"]
+
+[params]
+
+defaults=true
